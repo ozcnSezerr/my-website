@@ -36,21 +36,21 @@ function HeaderSection() {
             className="self-center font-medium text-gray-500 flex items-center rounded-sm"
             href=""
           >
-            {data.en.heroSection.navigation.Skills}
+            {data.en.heroSection.navigation[0].title}
           </a>
 
           <a
             className="self-center font-medium text-gray-500 flex items-center rounded-sm"
             href=""
           >
-            {data.en.heroSection.navigation.Projects}
+            {data.en.heroSection.navigation[1].title}
           </a>
 
           <a
             className="w-32 h-12 self-center font-medium text-[#3730A3] border border-[#3730A3] flex items-center justify-center rounded-sm"
             href=""
           >
-            {data.en.heroSection.navigation["Hire me"]}
+            {data.en.heroSection.navigation[2].title}
           </a>
         </nav>
       </div>
@@ -76,7 +76,7 @@ function HeaderSection() {
               className="bg-theme items-center text-white font-medium text-xl px-7 py-3 rounded-md"
               href=""
             >
-              {data.en.heroSection.navigation["Hire me"]}
+              {data.en.heroSection.socials[2].text}
             </a>
             <a
               className="flex border items-center gap-2 border-theme px-4 rounded-md"
@@ -84,7 +84,7 @@ function HeaderSection() {
             >
               <img
                 className="w-6"
-                src={`./public/images-1/${data.en.heroSection.socials[0].logo}`}
+                src={`./images-1/${data.en.heroSection.socials[0].logo}`}
                 alt=""
               />
               <p className="text-theme font-medium text-xl">
@@ -97,7 +97,7 @@ function HeaderSection() {
             >
               <img
                 className="w-6"
-                src={`./public/images-1/${data.en.heroSection.socials[1].logo}`}
+                src={`./images-1/${data.en.heroSection.socials[1].logo}`}
                 alt=""
               />
               <p className="text-theme font-medium text-xl">
@@ -112,10 +112,12 @@ function HeaderSection() {
           className="
             mt-2
             self-center
-            w-120 h-90
+            h-90
+            w-120
             rounded-2xl
+            hidden md:block
             "
-          src={`./public/images-1/${data.en.heroSection.profileImage}`}
+          src={`./images-1/${data.en.heroSection.profileImage}`}
           alt="..."
         />
       </div>

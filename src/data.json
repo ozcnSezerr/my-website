@@ -1,37 +1,36 @@
 {
   "en": {
+    "header": {
+      "languageSwitch": "TÜRKÇE'YE GEÇ",
+      "darkMode": "DARK MODE"
+    },
     "heroSection": {
-      "mode": "DARK MODE",
-      "translate": "Türkçe'ye geç",
-      "text": "Hi, I’m Sezer. I’m a full-stack developer. If you are looking for a \n Developer who to craft solid and scalable frontend products with \n great user experiences. Let’s shake hands with me.",
-      "author": "Sezer Öz",
+      "greeting": "Hi, I’m Sezer.",
+      "text": "I’m a full-stack developer. If you are looking for a \n Developer who to craft solid and scalable frontend products with\n great user experiences. Let’s shake hands with me.",
+      "author": "Lorem",
       "intro": "Creative thinker \n Minimalism lover",
       "profileImage": "hero-profile.png",
-      "navigation": {
-        "Skills": "Skills",
-        "Projects": "Projects",
-        "Hire me": "Hire me"
-      },
+      "navigation": [
+        { "title": "Skills", "link": "#skills" },
+        { "title": "Projects", "link": "#projects" },
+        { "title": "Hire me", "link": "#hireme" }
+      ],
       "socials": [
         {
           "logo": "github.svg",
           "text": "Github",
-          "link": "https://example.com"
+          "link": "https://github.com"
         },
         {
           "logo": "linkedin.svg",
           "text": "Linkedin",
-          "link": "https://github.com"
+          "link": "https://linkedin.com"
         },
         {
           "text": "Hire me",
-          "link": ""
+          "link": "mailto:exp@example.com"
         }
-      ],
-
-      "cta": {
-        "text": "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me."
-      }
+      ]
     },
     "skillsSection": {
       "title": "Skills",
@@ -49,50 +48,84 @@
           "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       ]
-    }
-  },
-  "tr": {
-    "heroSection": {
-      "greeting": "Merhaba! 👋",
-      "intro": "Merhaba ben Sezer. Ben bir full-stack geliştiriciyim. Solid prensiplerine uygun ölçeklenebilir projeler geliştiriyorum. Hadi tanışalım",
-      "profileImage": "profile-image.jpg",
-      "socials": [
+    },
+    "profileSection": {
+      "title": "Profile",
+      "basicInfo": [
+        { "label": "Birth Date", "value": "11.04.2002" },
+        { "label": "City of Residence", "value": "Tekirdağ" },
         {
-          "logo": "github.svg",
-          "alt_text": "github",
-          "link": "https://example.com"
+          "label": "Education",
+          "value": "Çanakkale Onsekiz Mart University,\n Computer Engineering"
         },
-        {
-          "logo": "linkedin.svg",
-          "alt_text": "linkedin",
-          "link": "https://github.com"
-        }
+        { "label": "Preferred Role", "value": "Frontend, UI" }
       ],
-      "cta": {
-        "text": "Şu anda",
-        "highlight1": "Freelance",
-        "text2": "olarak",
-        "highlight2": "UX, UI, & Web tasarım projeleri yapıyorum",
-        "text3": "beni takımına davet etmek için ->",
-        "email": "ornek@gmail.com"
+      "aboutMe": {
+        "title": "About Me",
+        "paragraphs": [
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam  temporibus cumque magnam!"
+        ]
       }
     },
-    "skillsSection": {
-      "title": "Yetenekler",
-      "skills": [
+    "projectsSection": {
+      "title": "Projects",
+      "projects": [
         {
-          "name": "Java Script",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "id": 1,
+          "title": "Workintech",
+          "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+          "tags": ["react", "redux", "axios"],
+          "links": {
+            "github": "#",
+            "viewSite": "#"
+          },
+          "image": "project-1.png"
         },
         {
-          "name": "React.js",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "id": 2,
+          "title": "Random Jokes",
+          "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+          "tags": ["react", "redux", "axios"],
+          "links": {
+            "github": "#",
+            "viewSite": "#"
+          },
+          "image": "project-2.png"
         },
         {
-          "name": "Node.js",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "id": 3,
+          "title": "Journey",
+          "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+          "tags": ["react", "redux", "axios"],
+          "links": {
+            "github": "#",
+            "viewSite": "#"
+          },
+          "image": "project-3.png"
         }
-      ]
+      ],
+      "footer": {
+        "title": "Let’s work together on your next product.",
+        "email": "almilasucode@gmail.com",
+        "links": [
+          {
+            "id": 1,
+            "text": "Personal Blog",
+            "url": "https://yourblog.com"
+          },
+          {
+            "id": 2,
+            "text": "Github",
+            "url": "https://github.com/almilasucode"
+          },
+          {
+            "id": 3,
+            "text": "Linkedin",
+            "url": "https://linkedin.com/in/almilasu"
+          }
+        ]
+      }
     }
   }
 }
