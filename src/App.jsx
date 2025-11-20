@@ -1,22 +1,22 @@
-import { useState } from "react";
 import "./App.css";
 import HeaderSection from "./components/HeaderSection";
 import SkillsSection from "./components/SkillsSection";
 import ProfileSection from "./components/ProfileSection";
 import ProjectSection from "./components/ProjectsSection";
 import FooterSection from "./components/FooterSection";
+import { ThemeContextProvider } from "./context/ThemeContext";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <HeaderSection />
-      <SkillsSection />
-      <ProfileSection />
-      <ProjectSection />
-      <FooterSection />
-    </div>
+    <ThemeContextProvider>
+      <div className="transition-colors duration-400 bg-[#F4F4F4] dark:bg-[#252128] text-gray-900 dark:text-gray-100">
+        <HeaderSection />
+        <SkillsSection />
+        <ProfileSection />
+        <ProjectSection />
+        <FooterSection />
+      </div>
+    </ThemeContextProvider>
   );
 }
 

@@ -77,14 +77,8 @@
           "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           "tags": ["react", "redux", "axios"],
           "links": {
-            "github": {
-              "title": "github",
-              "link": "#"
-            },
-            "viewSite": {
-              "title": "viewSite",
-              "link": "#"
-            }
+            "github": { "title": "Git Hub", "link": "#" },
+            "viewSite": { "title": "View Site", "link": "#" }
           },
           "image": "project-1.png"
         },
@@ -95,14 +89,8 @@
           "tags": ["react", "redux", "axios"],
           "linksName": ["github,viewSite"],
           "links": {
-            "github": {
-              "title": "github",
-              "link": "#"
-            },
-            "viewSite": {
-              "title": "viewSite",
-              "link": "#"
-            }
+            "github": { "title": "Git Hub", "link": "#" },
+            "viewSite": { "title": "View Site", "link": "#" }
           },
           "image": "project-2.png"
         },
@@ -112,14 +100,8 @@
           "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           "tags": ["react", "redux", "axios"],
           "links": {
-            "github": {
-              "title": "github",
-              "link": "#"
-            },
-            "viewSite": {
-              "title": "viewSite",
-              "link": "#"
-            }
+            "github": { "title": "Git Hub", "link": "#" },
+            "viewSite": { "title": "View Site", "link": "#" }
           },
           "image": "project-3.png"
         }
@@ -129,21 +111,9 @@
       "title": "Let’s work together on \n your next product.",
       "email": "loremipsum@gmail.com",
       "links": [
-        {
-          "id": 1,
-          "text": "Personal Blog",
-          "url": "https://yourblog.com"
-        },
-        {
-          "id": 2,
-          "text": "Github",
-          "url": "https://github.com/"
-        },
-        {
-          "id": 3,
-          "text": "Linkedin",
-          "url": "https://linkedin.com"
-        }
+        { "id": 1, "text": "Personal Blog", "url": "https://yourblog.com" },
+        { "id": 2, "text": "Github", "url": "https://github.com/" },
+        { "id": 3, "text": "Linkedin", "url": "https://linkedin.com" }
       ]
     }
   }

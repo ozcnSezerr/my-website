@@ -10,7 +10,7 @@ const ProjectsSection = () => {
   return (
     <section className="pb-30">
       <div className="mx-auto sm:px-6 lg:px-8 max-w-6xl">
-        <h2 className="text-5xl font-bold text-gray-900 text-center mb-12 md:text-left">
+        <h2 className="text-5xl font-bold dark:text-[#AEBCCF] text-center mb-12 md:text-left">
           {data.en.projectsSection.title}
         </h2>
 

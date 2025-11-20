@@ -2,6 +2,7 @@ import React from "react";
 import data from "../data.json";
 import ToggleMode from "./ToggleMode";
 import ToggleLanguage from "./ToggleLanguage";
+
 function HeaderSection() {
   return (
     <section className="pb-29">
@@ -12,14 +13,16 @@ function HeaderSection() {
         <ToggleLanguage />
       </div>
 
-      <div className="flex justify-between pr-52 pl-48">
+      <div className="flex justify-between pr-52 pl-48 pb-6">
         <div
           className="
           rotate-18
   w-14 h-14 
   rounded-full 
   bg-[#EEEBFF] 
+  dark:bg-[#4731D3]
   text-[#7B61FF] 
+  dark:text-[#8F88FF]
   grid 
   place-items-center 
   text-xl 
@@ -33,21 +36,21 @@ function HeaderSection() {
         {/* nav section  */}
         <nav className="flex gap-x-16">
           <a
-            className="self-center font-medium text-gray-500 flex items-center rounded-sm"
-            href=""
+            className="self-center  text-lg font-medium text-gray-500 flex items-center rounded-sm"
+            href="#skills"
           >
             {data.en.heroSection.navigation[0].title}
           </a>
 
           <a
-            className="self-center font-medium text-gray-500 flex items-center rounded-sm"
+            className="self-center text-lg font-medium text-gray-500 flex items-center rounded-sm"
             href=""
           >
             {data.en.heroSection.navigation[1].title}
           </a>
 
           <a
-            className="w-32 h-12 self-center font-medium text-[#3730A3] border border-[#3730A3] flex items-center justify-center rounded-sm"
+            className="w-32 h-12 self-center text-lg font-medium text-[#3730A3] dark:bg-[#d3d3fc] border border-[#3730A3] flex items-center justify-center rounded-sm"
             href=""
           >
             {data.en.heroSection.navigation[2].title}
@@ -59,27 +62,27 @@ function HeaderSection() {
       <div className="flex justify-center mt-14 gap-16">
         <div className="flex flex-col gap-9">
           {/* explaining part */}
-          <div className="flex gap-2 text-theme">
-            <hr className="w-25 self-center text-theme" />
+          <div className="flex gap-2 text-theme dark:text-[#B7AAFF]">
+            <hr className="w-25 self-center " />
             <p className="text-lg font-medium">{data.en.heroSection.author}</p>
           </div>
-          <h1 className="whitespace-pre-line font-bold text-7xl/18">
+          <h1 className="whitespace-pre-line font-bold text-7xl/18 dark:text-[#AEBCCF]">
             {data.en.heroSection.intro}
           </h1>
-          <p className="whitespace-pre-line font-normal text-gray-500 ">
+          <p className="whitespace-pre-line font-normal text-gray-500 dark:text-[#FFFFFF] ">
             {data.en.heroSection.text}
           </p>
 
           {/* social media buttons */}
           <div className="flex gap-2.5">
             <a
-              className="bg-theme items-center text-white font-medium text-xl px-7 py-3 rounded-md"
+              className="bg-theme dark:bg-[#d3d3fc] items-center text-white dark:text-gray-900 font-medium text-xl px-7 py-3 rounded-md"
               href=""
             >
               {data.en.heroSection.socials[2].text}
             </a>
             <a
-              className="flex border items-center gap-2 border-theme px-4 rounded-md"
+              className="flex border dark:bg-[#383838] items-center gap-2 border-theme dark:border-[#B7AAFF] px-4 rounded-md"
               href=""
             >
               <img
@@ -87,12 +90,12 @@ function HeaderSection() {
                 src={`./images-1/${data.en.heroSection.socials[0].logo}`}
                 alt=""
               />
-              <p className="text-theme font-medium text-xl">
+              <p className="text-theme font-medium text-xl dark:text-[#B7AAFF]">
                 {data.en.heroSection.socials[0].text}
               </p>
             </a>
             <a
-              className="flex border items-center gap-2 border-theme px-4 rounded-md"
+              className="flex border items-center dark:bg-[#383838] gap-2 border-theme dark:border-[#B7AAFF] px-4 rounded-md"
               href=""
             >
               <img
@@ -100,7 +103,7 @@ function HeaderSection() {
                 src={`./images-1/${data.en.heroSection.socials[1].logo}`}
                 alt=""
               />
-              <p className="text-theme font-medium text-xl">
+              <p className="text-theme font-medium text-xl dark:text-[#B7AAFF]">
                 {data.en.heroSection.socials[1].text}{" "}
               </p>
             </a>
@@ -116,9 +119,10 @@ function HeaderSection() {
             w-120
             rounded-2xl
             hidden md:block
+            dark:brightness-75
             "
           src={`./images-1/${data.en.heroSection.profileImage}`}
-          alt="..."
+          alt="profile photo"
         />
       </div>
     </section>
