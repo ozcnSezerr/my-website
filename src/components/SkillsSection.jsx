@@ -1,7 +1,9 @@
 import React from "react";
 import data from "../data.json";
+import { useLanguage } from "../context/LanguageContext";
 
 function SkillsSection() {
+  const { languageData } = useLanguage();
   return (
     <section
       className="flex flex-col justify-center items-center pb-8"
@@ -9,10 +11,10 @@ function SkillsSection() {
     >
       <div className="flex flex-col w-full max-w-6xl px-4">
         <h2 className="font-bold text-5xl mb-7 text-start dark:text-[#AEBCCF]">
-          Skills
+          {languageData.skillsSection.title}
         </h2>
         <div className="flex flex-wrap justify-between pb-10">
-          {data.en.skillsSection.skills.map((el, index) => (
+          {languageData.skillsSection.skills.map((el, index) => (
             <div
               key={index}
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex flex-col gap-y-2"

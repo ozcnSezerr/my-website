@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, tags, links, image }) => {
       {/* Proje Görseli */}
       <div className="h-48 mb-6 overflow-hidden shadow-sm bg-gray-100 group">
         <img
-          src={`../public/images-1/${image}`}
+          src={`./images-1/${image}`}
           alt={title}
           className="object-cover object-center group-hover:scale-105 transition-transform duration-300 dark:brightness-90"
         />
@@ -28,7 +28,7 @@ const ProjectCard = ({ title, description, tags, links, image }) => {
         {tags.map((tag, i) => (
           <span
             key={i}
-            className="px-4 py-1 border dark:bg-[#383838] border-[#4c40f7] dark:border[#8F88FF] text-[#4c40f7] dark:text-[#8F88FF] rounded-md text-sm font-medium"
+            className="px-4 py-1 border dark:bg-[#383838] border-[#4c40f7]  dark:border-[#8F88FF] text-[#4c40f7] dark:text-[#8F88FF] rounded-md text-sm font-medium"
           >
             {tag}
           </span>

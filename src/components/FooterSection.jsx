@@ -1,8 +1,10 @@
 import React from "react";
 import data from "../data.json";
+import { useLanguage } from "../context/LanguageContext";
 
 const FooterSection = () => {
-  const emailLink = `mailto:${data.en.footer.email}`;
+  const { languageData } = useLanguage();
+  const emailLink = `mailto:${languageData.footer.email}`;
 
   return (
     <div
@@ -12,9 +14,9 @@ const FooterSection = () => {
       "
     >
       {/* Left Section */}
-      <div className="flex flex-col gap-y-20 text-center md:text-left items-center md:items-start">
+      <div className=" max-w-lg w-full flex flex-col gap-y-20 text-center md:text-left items-center md:items-start">
         <p className="font-semibold text-5xl whitespace-pre-line md:text-5xl dark:text-[#AEBCCF]">
-          {data.en.footer.title}
+          {languageData.footer.title}
         </p>
 
         <p className="text-[#AF0C48] font-medium text-xl md:text-xl dark:text-pink-400">
@@ -23,7 +25,7 @@ const FooterSection = () => {
             href={emailLink}
             className="underline break-all dark:text-[#BAB2E7]"
           >
-            {data.en.footer.email}
+            {languageData.footer.email}
           </a>
         </p>
       </div>
@@ -31,13 +33,13 @@ const FooterSection = () => {
       {/* Right Links */}
       <div className="flex gap-x-8 mt-6 md:mt-0 self-center md:self-end">
         <a className="font-medium text-gray-700 dark:text-gray-300" href="">
-          {data.en.footer.links[0].text}
+          {languageData.footer.links[0].text}
         </a>
         <a className="font-medium text-[#17D18B] dark:text-green-500" href="">
-          {data.en.footer.links[1].text}
+          {languageData.footer.links[1].text}
         </a>
         <a className="font-medium text-[#0BA6F6] dark:text-blue-500" href="">
-          {data.en.footer.links[2].text}
+          {languageData.footer.links[2].text}
         </a>
       </div>
     </div>

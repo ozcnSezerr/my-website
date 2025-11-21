@@ -2,8 +2,10 @@ import React from "react";
 import data from "../data.json";
 import ToggleMode from "./ToggleMode";
 import ToggleLanguage from "./ToggleLanguage";
+import { useLanguage } from "../context/LanguageContext";
 
 function HeaderSection() {
+  const { languageData } = useLanguage();
   return (
     <section className="pb-29">
       {/* toggle section */}
@@ -39,38 +41,40 @@ function HeaderSection() {
             className="self-center  text-lg font-medium text-gray-500 flex items-center rounded-sm"
             href="#skills"
           >
-            {data.en.heroSection.navigation[0].title}
+            {languageData.heroSection.navigation[0].title}
           </a>
 
           <a
             className="self-center text-lg font-medium text-gray-500 flex items-center rounded-sm"
             href=""
           >
-            {data.en.heroSection.navigation[1].title}
+            {languageData.heroSection.navigation[1].title}
           </a>
 
           <a
             className="w-32 h-12 self-center text-lg font-medium text-[#3730A3] dark:bg-[#d3d3fc] border border-[#3730A3] flex items-center justify-center rounded-sm"
             href=""
           >
-            {data.en.heroSection.navigation[2].title}
+            {languageData.heroSection.navigation[2].title}
           </a>
         </nav>
       </div>
 
       {/* hero section */}
       <div className="flex justify-center mt-14 gap-16">
-        <div className="flex flex-col gap-9">
+        <div className="w-147 flex flex-col gap-9">
           {/* explaining part */}
           <div className="flex gap-2 text-theme dark:text-[#B7AAFF]">
             <hr className="w-25 self-center " />
-            <p className="text-lg font-medium">{data.en.heroSection.author}</p>
+            <p className="text-lg font-medium">
+              {languageData.heroSection.author}
+            </p>
           </div>
           <h1 className="whitespace-pre-line font-bold text-7xl/18 dark:text-[#AEBCCF]">
-            {data.en.heroSection.intro}
+            {languageData.heroSection.intro}
           </h1>
-          <p className="whitespace-pre-line font-normal text-gray-500 dark:text-[#FFFFFF] ">
-            {data.en.heroSection.text}
+          <p className="whitespace-pre-line  font-normal text-gray-500 dark:text-[#FFFFFF] ">
+            {languageData.heroSection.text}
           </p>
 
           {/* social media buttons */}
@@ -79,7 +83,7 @@ function HeaderSection() {
               className="bg-theme dark:bg-[#d3d3fc] items-center text-white dark:text-gray-900 font-medium text-xl px-7 py-3 rounded-md"
               href=""
             >
-              {data.en.heroSection.socials[2].text}
+              {languageData.heroSection.socials[2].text}
             </a>
             <a
               className="flex border dark:bg-[#383838] items-center gap-2 border-theme dark:border-[#B7AAFF] px-4 rounded-md"
@@ -87,11 +91,11 @@ function HeaderSection() {
             >
               <img
                 className="w-6"
-                src={`./images-1/${data.en.heroSection.socials[0].logo}`}
+                src={`./images-1/${languageData.heroSection.socials[0].logo}`}
                 alt=""
               />
               <p className="text-theme font-medium text-xl dark:text-[#B7AAFF]">
-                {data.en.heroSection.socials[0].text}
+                {languageData.heroSection.socials[0].text}
               </p>
             </a>
             <a
@@ -100,11 +104,11 @@ function HeaderSection() {
             >
               <img
                 className="w-6"
-                src={`./images-1/${data.en.heroSection.socials[1].logo}`}
+                src={`./images-1/${languageData.heroSection.socials[1].logo}`}
                 alt=""
               />
               <p className="text-theme font-medium text-xl dark:text-[#B7AAFF]">
-                {data.en.heroSection.socials[1].text}{" "}
+                {languageData.heroSection.socials[1].text}{" "}
               </p>
             </a>
           </div>
@@ -121,7 +125,7 @@ function HeaderSection() {
             hidden md:block
             dark:brightness-75
             "
-          src={`./images-1/${data.en.heroSection.profileImage}`}
+          src={`./images-1/${languageData.heroSection.profileImage}`}
           alt="profile photo"
         />
       </div>

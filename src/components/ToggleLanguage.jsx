@@ -1,20 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 const ToggleLanguage = () => {
-  const [isTurkish, setIsTurkish] = useState(false);
-
-  const toggleLanguage = () => {
-    setIsTurkish(!isTurkish);
-  };
+  const { language, toggleLanguage } = useLanguage();
 
   return (
     <div
       onClick={toggleLanguage}
-      className="w-38 flex cursor-pointer select-none font-bold text-sm uppercase tracking-wide items-center"
+      className="min-w-38 flex cursor-pointer select-none font-bold text-sm uppercase tracking-wide items-center"
     >
-      {isTurkish ? (
+      {language === "tr" ? (
         <span className="text-gray-500 dark:text-white">
-          SWITCH TO{""}
+          SWITCH TO{" "}
           <span className="text-theme dark:text-[#B7AAFF]">ENGLISH</span>
         </span>
       ) : (

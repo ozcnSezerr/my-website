@@ -9,7 +9,7 @@ const ToggleMode = () => {
       className="flex items-center gap-3 select-none font-bold text-gray-500 dark:text-gray-300 text-sm uppercase"
     >
       <div
-        className={`relative w-[60px] h-[26px] rounded-full transition-colors duration-200 ease-in-out dark:bg-[#3A3A3A] bg-indigo-800
+        className={`relative w-[60px] h-[26px] rounded-full transition-colors duration-300 ease-in-out dark:bg-[#3A3A3A] bg-indigo-800
         `}
       >
         <div

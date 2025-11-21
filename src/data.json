@@ -111,9 +111,127 @@
       "title": "Let’s work together on \n your next product.",
       "email": "loremipsum@gmail.com",
       "links": [
-        { "id": 1, "text": "Personal Blog", "url": "https://yourblog.com" },
-        { "id": 2, "text": "Github", "url": "https://github.com/" },
-        { "id": 3, "text": "Linkedin", "url": "https://linkedin.com" }
+        { "id": 1, "text": "Personal Blog", "url": "" },
+        { "id": 2, "text": "Github", "url": "" },
+        { "id": 3, "text": "Linkedin", "url": "" }
+      ]
+    }
+  },
+  "tr": {
+    "header": {
+      "languageSwitch": "SWITCH TO ENGLISH",
+      "darkMode": "KARANLIK MOD"
+    },
+    "heroSection": {
+      "greeting": "Merhaba, ben Sezer.",
+      "text": "Ben bir full-stack geliştiriciyim. Solid prensiplerine uygun ve ölçeklenebilir \n frontend ürünlerini, kullanıcı dostu deneyimlerle oluşturacak\n bir geliştirici arıyorsanız, hadi tanışalım.",
+      "author": "Lorem",
+      "intro": "Yaratıcı düşün \n Minimalist ol",
+      "profileImage": "hero-profile.jpg",
+      "navigation": [
+        { "title": "Yetenekler", "link": "#skills" },
+        { "title": "Projeler", "link": "#projects" },
+        { "title": "Beni işe al", "link": "#hireme" }
+      ],
+      "socials": [
+        {
+          "logo": "github.svg",
+          "text": "Github",
+          "link": "https://github.com"
+        },
+        {
+          "logo": "linkedin.svg",
+          "text": "Linkedin",
+          "link": "https://linkedin.com"
+        },
+        {
+          "text": "Beni işe al",
+          "link": "mailto:exp@example.com"
+        }
+      ]
+    },
+    "skillsSection": {
+      "title": "Yetenekler",
+      "skills": [
+        {
+          "name": "Java Script",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "React.Js",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Node.Js",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ]
+    },
+    "profileSection": {
+      "title": "Profil",
+      "basicInfo": [
+        { "label": "Doğum Tarihi", "value": "11.04.2002" },
+        { "label": "İkamet Şehri", "value": "Tekirdağ" },
+        {
+          "label": "Eğitim",
+          "value": "Çanakkale Onsekiz Mart Üniversitesi,\n Bilgisayar Mühendisliği"
+        },
+        { "label": "Tercih Edilen Rol", "value": "Frontend, UI" }
+      ],
+      "aboutMe": {
+        "title": "Hakkımda",
+        "paragraphs": [
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+          "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam  temporibus cumque magnam!"
+        ]
+      }
+    },
+    "projectsSection": {
+      "title": "Projeler",
+      "projects": [
+        {
+          "id": 1,
+          "title": "Workintech",
+          "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Bu eklenti vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. Bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalar üzerinde her türlü özelleştirmeyi yapmanıza imkân sağlar.",
+          "tags": ["react", "redux", "axios"],
+          "links": {
+            "github": { "title": "Git Hub", "link": "#" },
+            "viewSite": { "title": "Siteyi Gör", "link": "#" }
+          },
+          "image": "project-1.png"
+        },
+        {
+          "id": 2,
+          "title": "Random Jokes",
+          "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Bu eklenti vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. Bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalar üzerinde her türlü özelleştirmeyi yapmanıza imkân sağlar.",
+          "tags": ["react", "redux", "axios"],
+          "linksName": ["github,viewSite"],
+          "links": {
+            "github": { "title": "Git Hub", "link": "#" },
+            "viewSite": { "title": "Siteyi Gör", "link": "#" }
+          },
+          "image": "project-2.png"
+        },
+        {
+          "id": 3,
+          "title": "Journey",
+          "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan, basit, özelleştirilebilir ve minimal kurulumlu bir çerez eklentisi. Bu eklenti vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur. Bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalar üzerinde her türlü özelleştirmeyi yapmanıza imkân sağlar.",
+          "tags": ["react", "redux", "axios"],
+          "links": {
+            "github": { "title": "Git Hub", "link": "#" },
+            "viewSite": { "title": "Siteyi Gör", "link": "#" }
+          },
+          "image": "project-3.png"
+        }
+      ]
+    },
+    "footer": {
+      "title": "Sonraki projenizde\n birlikte çalışalım.",
+      "email": "loremipsum@gmail.com",
+      "links": [
+        { "id": 1, "text": "Kişisel Blog", "url": "" },
+        { "id": 2, "text": "Github", "url": "" },
+        { "id": 3, "text": "Linkedin", "url": "" }
       ]
     }
   }
