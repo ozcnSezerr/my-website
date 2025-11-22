@@ -10,7 +10,8 @@ import { LanguageProvider } from "./context/LanguageContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useToastNotifications } from "./hooks/useToastNotifications";
-
+import { postData } from "./api/postApi.jsx";
+import { useEffect } from "react";
 const MainLayout = () => {
   useToastNotifications();
 
@@ -27,6 +28,10 @@ const MainLayout = () => {
 };
 
 function App() {
+  useEffect(() => {
+    postData();
+  }, []);
+
   return (
     <ThemeContextProvider>
       <LanguageProvider>
