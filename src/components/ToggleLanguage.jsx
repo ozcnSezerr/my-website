@@ -6,6 +6,7 @@ const ToggleLanguage = () => {
 
   return (
     <div
+      data-testid="lang-btn"
       onClick={toggleLanguage}
       className="min-w-38 flex cursor-pointer select-none font-bold text-sm uppercase tracking-wide items-center"
     >

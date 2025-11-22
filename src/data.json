@@ -5,9 +5,8 @@
       "darkMode": "DARK MODE"
     },
     "heroSection": {
-      "greeting": "Hi, I’m Sezer.",
       "text": "I’m a full-stack developer. If you are looking for a \n Developer who to craft solid and scalable frontend products with\n great user experiences. Let’s shake hands with me.",
-      "author": "Lorem",
+      "author": "Sezer Özcan",
       "intro": "Creative thinker \n Minimalism lover",
       "profileImage": "hero-profile.png",
       "navigation": [

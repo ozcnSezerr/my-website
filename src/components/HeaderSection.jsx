@@ -46,14 +46,14 @@ function HeaderSection() {
 
           <a
             className="self-center text-lg font-medium text-gray-500 flex items-center rounded-sm"
-            href=""
+            href="#projects"
           >
             {languageData.heroSection.navigation[1].title}
           </a>
 
           <a
             className="w-32 h-12 self-center text-lg font-medium text-[#3730A3] dark:bg-[#d3d3fc] border border-[#3730A3] flex items-center justify-center rounded-sm"
-            href=""
+            href="mailto:"
           >
             {languageData.heroSection.navigation[2].title}
           </a>

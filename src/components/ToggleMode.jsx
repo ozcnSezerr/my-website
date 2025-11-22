@@ -5,6 +5,7 @@ const ToggleMode = () => {
 
   return (
     <div
+      data-testid="theme-btn"
       onClick={toggleDarkMode}
       className="flex items-center gap-3 select-none font-bold text-gray-500 dark:text-gray-300 text-sm uppercase"
     >

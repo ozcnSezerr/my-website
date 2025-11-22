@@ -11,7 +11,7 @@ const ProjectsSection = () => {
   if (!projectsData) return null;
 
   return (
-    <section className="pb-30">
+    <section className="pb-30" id="projects">
       <div className="mx-auto sm:px-6 lg:px-8 max-w-6xl">
         <h2 className="text-5xl font-bold dark:text-[#AEBCCF] text-center mb-12 md:text-left">
           {languageData.projectsSection.title}
